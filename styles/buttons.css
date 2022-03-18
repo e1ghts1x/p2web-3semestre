@@ -1,0 +1,14 @@
+.btn-default {
+    color: var(--text-color);
+    background: none;
+    border: 1px solid #6666ff;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 2px 0;
+    transition: 0.3s;
+  }
+  
+.btn-default:hover {
+    background-color: #6666ff;
+}

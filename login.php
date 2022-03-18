@@ -5,7 +5,7 @@
     include("conexao.php");
     if(empty($_POST["user"]) || empty($_POST["password"])){
         $_SESSION["empty_user"] = true;
-        header("Location: index.php");
+        header("Location: login.html");
         exit();
     }
 ?>
