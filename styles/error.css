@@ -1,0 +1,17 @@
+.erro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.4s;
+    min-width: 250px;
+}
+
+.erro h1{
+    margin-left: 10px;
+    margin-bottom: 0px;
+}
+
+.erro button{
+    width: 250px;
+}

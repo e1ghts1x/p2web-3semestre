@@ -6,7 +6,54 @@
     include("conexao.php"); 
 
     if (empty($_POST["user"]) || empty($_POST["password"])){
-        echo "O usuário e a senha não podem ser vazios.";
-        exit();
+        $_SESSION['nao_autorizado'] = true;
     }
+
+    $user = mysqli_real_escape_string($conectar, $_POST['user']);
+    $password = mysqli_real_escape_string($conectar, $_POST['password']);
+
+    $query = "SELECT id_usuario, usuario FROM usuario WHERE usuario = '{$user}' and senha = md5('{$password}')";
+    $result = mysqli_query($conectar, $query);
+
+    $row = mysqli_num_rows($result);
+
+    if($row == 1) {
+        $_SESSION['user'] = $user;
+        header('Location: quiz.php');
+        exit();
+    } else{
+        $_SESSION['nao_autorizado'] = true;
+    }
+
 ?>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles/index.css">
+        <link rel="stylesheet" href="styles/buttons.css">
+        <link rel="stylesheet" href="styles/error.css">
+        <link rel="icon" href="imgs/icon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <!--Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:wght@100&display=swap" rel="stylesheet">
+        <!---------------->
+        <title>...</title>
+    </head>
+    <body>
+        <div class="erro">
+            <?php 
+                if (isset($_SESSION['nao_autorizado'])) :
+            ?>
+                <h1>Acesso não autorizado</h1>
+            <?php
+                endif;
+                unset($_SESSION['nao_autenticado']);
+            ?>
+            <button class="btn-default" onclick="window.location='login.html';">Retornar</button>
+        </div>
+    </body>
+    <script src="scripts/buttons.js"></script>
+</html>
