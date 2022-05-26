@@ -7,7 +7,12 @@
     min-width: 250px;
 }
 
-.erro h1{
+.erro h2{
+    font-weight: 400;
+    float: left;
+    font-size: 35px;
+    margin-bottom: 0 0 50px;
+    padding: 1px 0;
     margin-left: 10px;
     margin-bottom: 0px;
 }

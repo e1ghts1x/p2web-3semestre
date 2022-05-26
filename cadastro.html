@@ -6,18 +6,14 @@
         <title>Cadastro FormGame 2.0</title>
         <link rel="icon" href="imgs/icon.png">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-        <!--Google Fonts-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:wght@100&display=swap" rel="stylesheet">
-        <!---->
     </head>
     <body class="">
         <button class="btn-default" onclick="toggleDarkMode()">Modo escuro</button>
         <div class="formulario">
             <h1>Cadastrar</h1>
             <form name="form" action="cadastro.php" method="POST">
-                <input type="text" name="user" placeholder="Usuário" maxlenght="50"><br>
+                <input type="text" name="user" placeholder="Usuário" maxlenght="30"><br>
+                <input type="text" name="nome" placeholder="Nome" maxlenght="30"><br>
                 <input type="password" id="password" name="password" placeholder="Senha">
                 <button class="btn-default" type="submit" name="button">Cadastrar</button>
             </form>
