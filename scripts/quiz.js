@@ -132,13 +132,13 @@ submitBtn.addEventListener('click', () => {
            quiz.innerHTML = `
            <h2>Você respondeu ${score}/${quizData.length} questões corretamente (╯°□°）╯︵ ┻━┻</h2>
 
-           <button onclick="window.location.href='index.html'">Menu Principal</button>
+           <button onclick="window.location.href='area_usuario.php'">Menu Principal</button>
            `
        } else if(score < 4){
            quiz.innerHTML = `
            <h2>Você respondeu ${score}/${quizData.length} questões corretamente  ┬─┬ ノ( ゜-゜ノ)</h2>
             <h2>Estude mais</h2>
-            <button onclick="window.location.href='Resumo.html'">Clique aqui</button>`
+            <button onclick="window.location.href='area_usuario.php'">Menu Principal</button>`
        }
     }
 })
