@@ -19,7 +19,7 @@
 
         if($row == 1) {
             $_SESSION['user'] = $user;
-            header('Location: quiz.php');
+            header('Location: area_usuario.php');
             exit();
         } else{
             $_SESSION['nao_autorizado'] = true;

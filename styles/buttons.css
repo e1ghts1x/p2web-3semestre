@@ -12,3 +12,20 @@
 .btn-default:hover {
     background-color: #6666ff;
 }
+
+.btn-return-quiz{
+  color: white;
+  width: 1%;
+  background: #6666ff;
+  border: 1px solid #6666ff;
+  padding: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 2px 0;
+  transition: 0.2s;
+}
+
+.btn-return-quiz:hover {
+  background-color: #7868A1;
+  width: 10%;
+}

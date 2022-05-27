@@ -56,7 +56,7 @@
                 <?php
                     if (isset($_SESSION['cliente_cadastrado'])) :
                 ?>
-                <h2>Cliente Cadastrado com sucesso!</h2>
+                <h2>Usuário cadastrado com sucesso!</h2>
                 <button class="btn-default" onclick="window.location='login.html';">Login</button>
                 <?php 
                     endif;
@@ -65,7 +65,7 @@
                 <?php
                     if (isset($_SESSION['erro_cliente_nao_cadastrado'])) :
                 ?>
-                <h2>Erro, cliente não cadastrado</h2>
+                <h2>Erro, usuário não cadastrado</h2>
                 <button class="btn-default" onclick="window.location='cadastro.html';">Retornar</button>
                 <?php 
                     endif;

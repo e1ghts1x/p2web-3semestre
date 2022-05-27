@@ -3,6 +3,7 @@
 * {
     box-sizing: border-box;
     font-family: 'Poppins';
+    transition: 0.2s;
 }
 
 body.dark-mode {
@@ -20,7 +21,7 @@ body.dark-mode {
 
 body.light-mode {
     --text-color: #121212;
-    --bkg-color: #eee;
+    --bkg-color: #fff;
     color: var(--text-color);
     background: var(--bkg-color);
     display: flex;
@@ -33,6 +34,7 @@ body.light-mode {
 
 .quiz-container{
     background-color: #EBEBEB ;
+    box-shadow: 10px 5px 20px black;
     border-radius: 10px;
     width: 600px;
     overflow: hidden;
@@ -59,7 +61,7 @@ ul li{
 ul li label{
     cursor: pointer;
 }
-button{
+.quiz-container button{
     background-color: #6666ff;
     color: #FFFFFF;
     border: none;
@@ -71,6 +73,6 @@ button{
     padding: 1.3rem;
     }
 
-button:hover{
+.quiz-container button:hover{
     background-color:#7868A1 ;
 }

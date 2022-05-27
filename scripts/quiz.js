@@ -1,10 +1,10 @@
 const quizData = [
     {
-        question: "Qual a linguagem que 'roda' em um navegador?", //Javascript
-        a: "Java",
-        b: "C#",
-        c: "Python",
-        d: "JavaScript",
+        question: "Quais os dados do PHP que estão contidos no grupo Escalar?", //PHP
+        a: "Objetos, null, Inteiros e Arrays",
+        b: "Arrays e Objetos",
+        c: "Recursos e null",
+        d: "Inteiros, Ponto Flutuante, String e Booleanos",
         correct: "d",
     },
     {
@@ -25,11 +25,11 @@ const quizData = [
 
     },
     {
-        question: "Em que ano o JavaScript foi lançado?", //Javascript
-        a: "1996",
-        b: "1995",
-        c: "1994",
-        d: "Nenhuma das alternativas.",
+        question: "Assinale a frase verdadeira:", //PHP
+        a: "As constantes podem possuir como valor somente tipos escalares, não sendo aceitos os tipos inteiros, string, pontos flutuantes e booleanos",
+        b: "Quando uma constante é especificada, seu valor não pode ser alterado ou removido",
+        c: "Para se saber se uma constante já foi definida, utiliza a função return()",
+        d: "Variáveis são utilizadas no PHP através do sinal $$",
         correct: "b",
     },
     {
@@ -57,11 +57,11 @@ const quizData = [
         correct:"b",
     },
     {
-        question: "Assinale a alternativa que representa a forma correta para declaração de uma variável em JavaScript. Leve em consideração o conjunto de regras que visa as melhores práticas da programação.", //Javascript
-        a: "var a = 2",
-        b: "var = a",
-        c: "var a = 2 inteiros",
-        d: "var a = (_2_)",
+        question: "Como é definido os métodos e atributos de uma classe no PHP?", //PHP
+        a: "public, private e protected",
+        b: "function, class e public",
+        c: "construct e destruct",
+        d: "set, class e construct",
         correct:"a",
     },
     {
@@ -130,13 +130,13 @@ submitBtn.addEventListener('click', () => {
            loadQuiz()
        } else if(score > 4){
            quiz.innerHTML = `
-           <h2>Você respondeu ${score}/${quizData.length} questões corretamente</h2>
+           <h2>Você respondeu ${score}/${quizData.length} questões corretamente (╯°□°）╯︵ ┻━┻</h2>
 
            <button onclick="window.location.href='index.html'">Menu Principal</button>
            `
        } else if(score < 4){
            quiz.innerHTML = `
-           <h2>Você respondeu ${score}/${quizData.length} questões corretamente</h2>
+           <h2>Você respondeu ${score}/${quizData.length} questões corretamente  ┬─┬ ノ( ゜-゜ノ)</h2>
             <h2>Estude mais</h2>
             <button onclick="window.location.href='Resumo.html'">Clique aqui</button>`
        }

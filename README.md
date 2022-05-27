@@ -7,7 +7,7 @@
 
 ### Requisitos cumpridos
 - [x] Tela de Login (Usuário e senha)
-- [] Formulário de cadastro de usuário
+- [x] Formulário de cadastro de usuário
 - [] Formulário de mensagem
 
 <h6 align="center">

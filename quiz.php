@@ -5,7 +5,8 @@
     } 
     include("verifica_login.php");
     include("conexao.php");
-    $query = "SELECT nome FROM usuario where usuario = '{$user}';";
+    $usuario = $_SESSION['user'];
+    $query = "SELECT nome FROM usuario where usuario = '{$usuario}';";
     $result = mysqli_query($conectar, $query);
     $welcome = $result->fetch_assoc();
 
@@ -14,16 +15,17 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="styles/quiz.css">
-    <link rel="icon" href="imgs/logo.png">
+    <link rel="stylesheet" href="styles/buttons.css">
+    <link rel="icon" href="imgs/icon.png">
     <title>Quiz Web</title>
 </head>
-<body>
+<body class="">
+    <button onclick="location.href='area_usuario.php'" class="btn-return-quiz">Retornar</button>
     <div class="quiz-container" id="quiz">
         <div class="quiz-header">
-            <h3>Bem-vindo: <?php $welcome['usuario'];?></h3>
+            <h3>Bem-vindo: <?php echo $welcome['nome'];?></h3>
             <h2 id="question">Question Text</h2>
             <ul>
                 <li>
@@ -48,5 +50,7 @@
     </div>
     <script src="scripts/quiz.js"></script>
     <script src="scripts/buttons.js"></script>
+    <audio loop id="foobar" src="/res/tale.mp3" preload="none"></audio>
+    <script src="scripts/music.js"></script>
 </body>
 </html>
