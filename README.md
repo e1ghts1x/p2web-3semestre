@@ -8,7 +8,7 @@
 ### Requisitos cumpridos
 - [x] Tela de Login (Usuário e senha)
 - [x] Formulário de cadastro de usuário
-- [] Formulário de mensagem
+- [x] Formulário de mensagem
 
 <h6 align="center">
 	Criado por: <a href="https://github.com/e1ghts1x">Emanuel</a> & <a href="https://github.com/Mahclarasilva">Maria Clara</a>
