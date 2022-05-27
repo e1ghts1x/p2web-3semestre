@@ -37,7 +37,7 @@
         <link rel="stylesheet" href="styles/index.css">
         <link rel="stylesheet" href="styles/buttons.css">
         <link rel="stylesheet" href="styles/error.css">
-        <title>Cadastro FormGame 2.0</title>
+        <title>...</title>
         <link rel="icon" href="imgs/icon.png">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     </head>
