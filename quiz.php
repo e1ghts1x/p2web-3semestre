@@ -1,3 +1,15 @@
+<?php
+    if(!isset($_SESSION)) 
+    { 
+        session_start(); 
+    } 
+    include("verifica_login.php");
+    include("conexao.php");
+    $query = "SELECT nome FROM usuario where usuario = '{$user}';";
+    $result = mysqli_query($conectar, $query);
+    $welcome = $result->fetch_assoc();
+
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -11,7 +23,7 @@
 <body>
     <div class="quiz-container" id="quiz">
         <div class="quiz-header">
-            <h1><?php ?></h1>
+            <h3>Bem-vindo: <?php $welcome['usuario'];?></h3>
             <h2 id="question">Question Text</h2>
             <ul>
                 <li>
