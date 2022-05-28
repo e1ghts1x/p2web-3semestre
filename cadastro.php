@@ -6,6 +6,8 @@
     
     if(empty($_POST["user"]) || empty($_POST["nome"]) || empty($_POST["password"])){
         $_SESSION['incompleto'] = true;
+    }elseif(strlen($_POST["password"])<8){
+        $_SESSION['senha_fraca'] = true;
     }
     else{
         $usuario = $_POST['user'];
@@ -79,6 +81,15 @@
                 <?php 
                     endif;
                     unset($_SESSION['usuario_existente']);
+                ?>
+                <?php
+                    if (isset($_SESSION['senha_fraca'])) :
+                ?>
+                <h2>Sua senha deve conter ao menos 8 caracteres.</h2>
+                <button class="btn-default" onclick="window.location='cadastro.html';">Retornar</button>
+                <?php 
+                    endif;
+                    unset($_SESSION['senha_fraca']);
                 ?>
             </div>
         </div>
