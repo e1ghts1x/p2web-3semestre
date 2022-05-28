@@ -16,6 +16,4 @@ BEGIN
 END
 $$
 
-SELECT nome FROM usuario where usuario = "CuDePato";
-SELECT nome FROM usuario where usuario = "Emanuel";
 select * from usuario;
