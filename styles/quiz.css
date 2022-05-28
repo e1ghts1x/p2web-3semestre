@@ -15,7 +15,6 @@ body.dark-mode {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    overflow: hidden;
     margin: 0;
 }
 
@@ -28,7 +27,6 @@ body.light-mode {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    overflow: hidden;
     margin: 0;
 }
 
@@ -37,7 +35,6 @@ body.light-mode {
     box-shadow: 10px 5px 20px black;
     border-radius: 10px;
     max-width: 500px;
-    max-height: 600px;
     overflow: hidden;
 }
 
