@@ -1,9 +1,0 @@
-erros:
-1. h4 não aparece na condição. XX DEPRECATED
-2. darkmode se perde toda vez que atualiza a página (pode ser corrigido com php ou js localstorage: https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/). XX: CONSERTADO
-
-a fazer:
-1. banco de dados.
-2. conexão com o banco de dados.
-3. autenticação e condições de erros.
-4. música continua.
