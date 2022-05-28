@@ -29,3 +29,10 @@
   background-color: #7868A1;
   width: 10%;
 }
+
+
+@media only screen and (max-width: 600px){
+  .btn-return-quiz{
+    display:none;
+  }
+}
