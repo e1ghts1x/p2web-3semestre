@@ -14,6 +14,7 @@
     $result = mysqli_query($conectar, $query);
     if($result){
         $_SESSION['concluido'] = true;
+        session_destroy();
     }
     else{
         $_SESSION['erro'] = true;
